@@ -38,6 +38,12 @@ $left-gutter: 64px;
         color: $secondary-content;
     }
 
+    /* The body slot clips its children; the edit composer's autocomplete and
+       formatting bar must be able to overflow it. */
+    .mx_EditMessageComposerWrapper {
+        overflow: visible;
+    }
+
     .mx_EventTile_content {
         &.mx_EditMessageComposer,
         &.mx_EditWysiwygComposer {

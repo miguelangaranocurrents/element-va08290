@@ -41,6 +41,12 @@
     display: flex;
 }
 
+/* Let the body shrink below its content width (e.g. wide code blocks) so the
+   edited marker doesn't push the text out of the visible area. */
+.annotated > :first-child {
+    min-width: 0;
+}
+
 .annotatedInline {
     display: inline-flex;
 }
